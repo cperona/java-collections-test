@@ -82,7 +82,7 @@ public class ConsoleApp {
             FileWriter fileWriter = new FileWriter(CLASSIFICATION_FILE_ROUTE, true);
             fileWriter.append(USERNAME + ": " + points + "\n");
             fileWriter.close();
-            System.out.println("Points successfully added to Questions file. ");
+            System.out.println("Points successfully added to Classification file. ");
         } catch (FileNotFoundException ex) {
             System.out.println("Classification file route not found. Try again. ");
         } catch (IOException e) {
