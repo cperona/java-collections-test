@@ -4,6 +4,8 @@ Program to test fundamental concepts of collections in Java, focusing on common 
 
 The goal is to strengthen the understanding of how to create, modify, and iterate over these data structures, as well as observe their behavior regarding duplicates, object comparison, and element ordering. Also to practice file reading and writing, along with basic user interaction.
 
+Set up: ``git clone https://github.com/cperona/java-collections-test.git``, use the temurin-25 SDK.
+
 ## Exercise 1 — Duplicates (org.example.act1_duplicates package)
 
 Use ArrayList and HashSet to practice adding and modifying elements and to observe how duplicates are handled.
