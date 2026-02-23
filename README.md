@@ -2,7 +2,7 @@
 
 Program to test fundamental concepts of collections in Java, focusing on common classes from the java.util library such as ArrayList, HashSet, HashMap, and ListIterator.
 
-The goal is to strengthen the understanding of how to create, modify, and iterate over these data structures, as well as observe their behavior regarding duplicates, object comparison, and element ordering. You will also practice file reading and writing, along with basic user interaction.
+The goal is to strengthen the understanding of how to create, modify, and iterate over these data structures, as well as observe their behavior regarding duplicates, object comparison, and element ordering. Also to practice file reading and writing, along with basic user interaction.
 
 ## Exercise 1 — Duplicates (org.example.act1_duplicates package)
 
