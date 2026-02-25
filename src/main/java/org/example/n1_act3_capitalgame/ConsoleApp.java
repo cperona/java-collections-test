@@ -1,4 +1,4 @@
-package org.example.act3_capitalgame;
+package org.example.n1_act3_capitalgame;
 
 import java.io.*;
 import java.util.HashMap;

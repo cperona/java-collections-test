@@ -6,17 +6,17 @@ The goal is to strengthen the understanding of how to create, modify, and iterat
 
 Set up: ``git clone https://github.com/cperona/java-collections-test.git``, use the temurin-25 SDK.
 
-## Exercise 1 — Duplicates (org.example.act1_duplicates package)
+## Exercise 1 — Duplicates (org.example.n1_act1_duplicates package)
 
 Use ArrayList and HashSet to practice adding and modifying elements and to observe how duplicates are handled.
 
 Create a Month class with a name attribute. Add 11 months to an ArrayList, leaving out “August.” Insert it in the correct position and verify the order. Convert the ArrayList into a HashSet to confirm that duplicates are not allowed. Finally, iterate through the collection using both a for loop and an Iterator.
 
-## Exercise 2 — ListIterator (org.example.act2_listiterator package)
+## Exercise 2 — ListIterator (org.example.n1_act2_listiterator package)
 
 Create and fill a List<Integer>. Then create a second list containing the same elements in reverse order. Use a ListIterator to read elements from the first list and insert them into the second.
 
-## Exercise 3 — Capital Game (org.example.act3_capitalgame package)
+## Exercise 3 — Capital Game (org.example.n1_act3_capitalgame package)
 
 ***IMPORTANT: On the Main class, change the ConsoleApp contructor parameters QUESTIONS_FILE_ROUTE and CLASSIFICATION_FILE_ROUTE to the desired routes.***
 

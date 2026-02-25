@@ -1,4 +1,4 @@
-package org.example.act2_listiterator;
+package org.example.n1_act2_listiterator;
 
 import java.util.ArrayList;
 import java.util.List;
