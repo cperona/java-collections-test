@@ -1,4 +1,4 @@
-package org.example.n1_act3_capitalgame;
+package org.example.n1.act3.capitalgame;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

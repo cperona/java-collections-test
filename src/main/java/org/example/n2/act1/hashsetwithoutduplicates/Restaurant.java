@@ -1,8 +1,8 @@
-package org.example.n2_act2_sortingcollections;
+package org.example.n2.act1.hashsetwithoutduplicates;
 
 import java.util.Objects;
 
-public class Restaurant implements Comparable<Restaurant>{
+public class Restaurant {
     private String nom;
     private int puntuacio;
 
@@ -21,19 +21,5 @@ public class Restaurant implements Comparable<Restaurant>{
     @Override
     public int hashCode() {
         return Objects.hash(nom, puntuacio);
-    }
-
-    @Override
-    public int compareTo(Restaurant restaurant) {
-        //Sort in descending order
-        return restaurant.puntuacio - this.puntuacio;
-    }
-
-    @Override
-    public String toString() {
-        return "Restaurant{" +
-                "nom='" + nom + '\'' +
-                ", puntuacio=" + puntuacio +
-                '}';
     }
 }

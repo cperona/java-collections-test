@@ -1,4 +1,4 @@
-package org.example.n3_act1_personmanager;
+package org.example.n3.act1.personmanager;
 
 public class Main {
     static void main() {

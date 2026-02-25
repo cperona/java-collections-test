@@ -1,4 +1,4 @@
-package org.example.n1_act1_duplicates;
+package org.example.n1.act1.duplicates;
 
 import java.util.ArrayList;
 import java.util.HashSet;

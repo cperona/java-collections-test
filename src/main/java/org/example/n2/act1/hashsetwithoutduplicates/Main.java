@@ -1,4 +1,4 @@
-package org.example.n2_act1_hashsetwithoutduplicates;
+package org.example.n2.act1.hashsetwithoutduplicates;
 
 public class Main {
     static void main() {

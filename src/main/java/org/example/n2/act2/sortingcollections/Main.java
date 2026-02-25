@@ -1,4 +1,4 @@
-package org.example.n2_act2_sortingcollections;
+package org.example.n2.act2.sortingcollections;
 
 import java.util.ArrayList;
 import java.util.Collections;
