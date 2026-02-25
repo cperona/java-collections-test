@@ -20,8 +20,8 @@ public class Main {
                     10,
                     "Country",
                     "Capital",
-                    "/var/home/chris/IdeaProjects/java-collections-test/src/main/resources/countries.txt",
-                    "/var/home/chris/IdeaProjects/java-collections-test/src/main/resources/classification.txt",
+                    "countries.txt",
+                    "classification.txt",
                     username);
             consoleApp.loadFile();
             consoleApp.play();
