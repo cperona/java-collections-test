@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Iterator;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ConsoleApp {
     private final String QUESTION;
@@ -33,11 +34,9 @@ public class ConsoleApp {
     }
 
     public void play() {
-        Iterator<String> it = hashMap.keySet().iterator();
-
         try (Scanner sc = new Scanner(System.in)){
             for (int i = 0; i < NUMBER_OF_QUESTIONS; i++) {
-                String questionKey = it.next();
+                String questionKey = getRandomQuestion();
 
                 System.out.println(QUESTION + questionKey);
 
@@ -88,5 +87,15 @@ public class ConsoleApp {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public String getRandomQuestion() {
+        Iterator<String> it = hashMap.keySet().iterator();
+        int randomOffset = ThreadLocalRandom.current().nextInt(hashMap.size());
+
+        for (int i = 0; i < randomOffset; i++) {
+            it.next();
+        }
+        return it.next();
     }
 }
