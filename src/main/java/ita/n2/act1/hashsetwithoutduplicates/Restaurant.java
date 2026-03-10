@@ -22,4 +22,12 @@ public class Restaurant {
     public int hashCode() {
         return Objects.hash(name, rating);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getRating() {
+        return rating;
+    }
 }
