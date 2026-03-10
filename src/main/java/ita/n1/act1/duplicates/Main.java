@@ -49,6 +49,7 @@ public class Main {
         //two times, the element is only added one time.
         //We can convert the ArrayList to a HashSet adding it to the constructor.
         HashSet<Month> monthHashSet = new HashSet<>(monthArrayList);
+        monthHashSet.add(new Month("august"));
 
         System.out.println("\nHashSets are unordered and objects added are unique: ");
         for (Month m : monthHashSet) {

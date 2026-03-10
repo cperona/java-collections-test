@@ -1,5 +1,7 @@
 package ita.n1.act1.duplicates;
 
+import java.util.Objects;
+
 public class Month {
     private String name;
 
@@ -13,5 +15,17 @@ public class Month {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Month month = (Month) o;
+        return Objects.equals(name, month.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(name);
     }
 }
