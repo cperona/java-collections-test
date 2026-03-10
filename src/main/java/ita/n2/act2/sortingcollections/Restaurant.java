@@ -25,8 +25,11 @@ public class Restaurant implements Comparable<Restaurant>{
 
     @Override
     public int compareTo(Restaurant restaurant) {
-        //Sort in descending order
-        return restaurant.rating - this.rating;
+        if (restaurant.name.equals(this.name)) {
+            //Sort in descending order
+            return restaurant.rating - this.rating;
+        }
+        return this.name.compareTo(restaurant.name);
     }
 
     @Override
