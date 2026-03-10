@@ -3,37 +3,37 @@ package ita.n2.act2.sortingcollections;
 import java.util.Objects;
 
 public class Restaurant implements Comparable<Restaurant>{
-    private String nom;
-    private int puntuacio;
+    private String name;
+    private int rating;
 
-    public Restaurant(String nom, int puntuacio) {
-        this.nom = nom;
-        this.puntuacio = puntuacio;
+    public Restaurant(String name, int rating) {
+        this.name = name;
+        this.rating = rating;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
 
-        return ((Restaurant) o).nom.equals(this.nom) && ((Restaurant) o).puntuacio == this.puntuacio;
+        return ((Restaurant) o).name.equals(this.name) && ((Restaurant) o).rating == this.rating;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nom, puntuacio);
+        return Objects.hash(name, rating);
     }
 
     @Override
     public int compareTo(Restaurant restaurant) {
         //Sort in descending order
-        return restaurant.puntuacio - this.puntuacio;
+        return restaurant.rating - this.rating;
     }
 
     @Override
     public String toString() {
         return "Restaurant{" +
-                "nom='" + nom + '\'' +
-                ", puntuacio=" + puntuacio +
+                "nom='" + name + '\'' +
+                ", puntuacio=" + rating +
                 '}';
     }
 }
