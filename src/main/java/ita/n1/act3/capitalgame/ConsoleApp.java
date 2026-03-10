@@ -40,9 +40,9 @@ public class ConsoleApp {
 
                 System.out.println(QUESTION + questionKey);
 
-                String answer = sc.next();
+                String answer = sc.next().toLowerCase();
 
-                if (answer.equals(hashMap.get(questionKey))){
+                if (answer.equals(hashMap.get(questionKey).toLowerCase())){
                     System.out.println("Correct answer! +1 point");
                     this.points++;
                 } else {
@@ -89,7 +89,7 @@ public class ConsoleApp {
         }
     }
 
-    public String getRandomQuestion() {
+    private String getRandomQuestion() {
         Iterator<String> it = hashMap.keySet().iterator();
         int randomOffset = ThreadLocalRandom.current().nextInt(hashMap.size());
 
