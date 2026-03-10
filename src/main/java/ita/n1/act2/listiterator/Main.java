@@ -6,26 +6,22 @@ import java.util.ListIterator;
 
 public class Main {
     public static void main(String[] args) {
-        //## Part1: Create and fill a List<Integer>
+        //## Create and fill a List<Integer>
         List<Integer> list1 = new ArrayList<Integer>();
         list1.add(1);
         list1.add(2);
         list1.add(3);
         list1.add(4);
 
-        //## Part2: Create a second list and add the same element but on reverse order.
-        List<Integer> list2 = new ArrayList<Integer>();
-        list2.add(4);
-        list2.add(3);
-        list2.add(2);
-        list2.add(1);
-
-        //## Part3: Use the ListIterator to read the elements of the first list (list1)
+        //## Create a second list and add the same element but on reverse order.
+        //## Use the ListIterator to read the elements of the first list (list1)
         //and add it onto the second list (list2)
-        ListIterator<Integer> listIterator = list1.listIterator();
+        List<Integer> list2 = new ArrayList<Integer>();
+        //Position the iterator at the end of the list using list1.size() as an argument.
+        ListIterator<Integer> listIterator = list1.listIterator(list1.size());
 
-        while (listIterator.hasNext()) {
-            list2.add(listIterator.next());
+        while (listIterator.hasPrevious()) {
+            list2.add(listIterator.previous());
         }
 
         //Print list2
