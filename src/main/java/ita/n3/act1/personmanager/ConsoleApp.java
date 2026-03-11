@@ -128,7 +128,7 @@ public class ConsoleApp {
                 System.out.println(this.persons.toString());
                 do {
                     System.out.println("Type 'q' to return: ");
-                } while (sc.next().equals("q"));
+                } while (!sc.next().equals("q"));
                 launchMenu();
                 break;
             case Option.SHOW_PERSONS_SORTED_BY_SURNAME_DESCENDING:
@@ -137,13 +137,17 @@ public class ConsoleApp {
                 System.out.println(this.persons.toString());
                 do {
                     System.out.println("Type 'q' to return: ");
-                } while (sc.next().equals("q"));
+                } while (!sc.next().equals("q"));
                 launchMenu();
                 break;
             case Option.SHOW_PERSONS_SORTED_BY_ID_ASCENDING:
                 this.persons.sortPersonsByIDAscending();
                 System.out.println("Person sorted by ID (ascending): ");
                 System.out.println(this.persons.toString());
+                do {
+                    System.out.println("Type 'q' to return: ");
+                } while (!sc.next().equals("q"));
+                launchMenu();
                 break;
             case Option.SHOW_PERSONS_SORTED_BY_ID_DESCENDING:
                 this.persons.sortPersonsByIDDescending();
@@ -151,7 +155,7 @@ public class ConsoleApp {
                 System.out.println(this.persons.toString());
                 do {
                     System.out.println("Type 'q' to return: ");
-                } while (sc.next().equals("q"));
+                } while (!sc.next().equals("q"));
                 launchMenu();
                 break;
             case Option.QUIT:

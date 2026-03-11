@@ -5,6 +5,7 @@ build/
 !**/src/test/**/build/
 .kotlin
 classification.txt
+personfile.csv
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
